@@ -1,0 +1,142 @@
+
+/*TITRE CENTRE PAGE */
+header {
+    display: flex;      /* Utilise Flexbox */
+    justify-content: center; /* Centre horizontalement le contenu */
+    align-items: flex-start; /* Alignement au début verticalement (haut) */
+    height: 100px;      /* Hauteur optionnelle pour donner de l'espace autour du titre */
+    width: 100%;        /* Utilise toute la largeur disponible */
+}
+
+h1 {
+    margin: 0;          /* Enlève la marge par défaut pour le titre */
+}
+
+
+
+/*HAUT GAUCHE*/
+.container-top-left {
+    display: flex;        /* Active Flexbox */
+    justify-content: left; /* Centre horizontalement le contenu */
+    width: 100%;          /* Utilise toute la largeur disponible */
+    position: absolute;   /* Position absolue pour un contrôle précis */
+    top: 30px;               /* En haut de la page */
+    left: 30px;              /* À gauche de la page */
+}
+
+h1 {
+    margin-top: 10px;     /* Ajoute un peu d'espace au-dessus du titre */
+    font-size: 24px;      /* Taille de police appropriée pour le titre */
+}
+
+
+
+
+/* CSS pour centrer le carrousel */
+.carousel {
+    margin: 0 auto; /* Centrer le carrousel horizontalement */
+    max-width: 600px; /* Ajustez cette valeur selon la largeur désirée */
+
+}
+
+/* CSS pour assurer que les images sont centrées à l'intérieur du carrousel */
+.carousel-item {
+    display: flex;
+    justify-content: center; /* Centre les enfants (images) horizontalement */
+    align-items: center; /* Centre les enfants (images) verticalement */
+}
+
+
+
+
+
+
+
+/* BOUTON EN HAUT A DROITE*/
+.container-top-right {
+    position: fixed;  /* Fixe le conteneur en position absolue par rapport à la fenêtre */
+    top: 30px;        /* 10px du haut de la fenêtre */
+    right: 30px;      /* 10px du bord droit de la fenêtre */
+    display: flex;    /* Utilise flexbox pour l'alignement des boutons */
+    gap: 10px;        /* Espacement entre les boutons */
+}
+
+.bouton {
+    background-color: green; /* Couleur de fond */
+    color: white;            /* Couleur du texte */
+    border: none;            /* Pas de bordure */
+    padding: 10px 20px;      /* Padding pour agrandir le bouton */
+    cursor: pointer;         /* Curseur en forme de pointeur */
+    border-radius: 5px;      /* Bords arrondis */
+}
+
+.bouton:hover {
+    background-color: darkgreen; /* Plus foncé lorsque survolé */
+}
+
+.bouton:active {
+    background-color: forestgreen; /* Changement lors du clic */
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.3); /* Effet enfoncé */
+}
+
+
+
+
+/*CARD */
+
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    position: relative;
+    top: 100px;
+    
+}
+
+.card {
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+
+
+/* Teste histoire entreprise */
+
+/* Style pour le contenu du texte */
+.text-content {
+    text-align: center; /* Centre le texte horizontalement */
+    padding: 20px; /* Ajoute un peu de padding pour que le texte ne touche pas les bords */
+    margin-bottom: 50px; /* Ajoute un espace entre le texte et la zone rectangulaire en bas */
+}
+
+/* Style pour la zone rectangulaire en bas */
+.footer-rectangle {
+    position: fixed; /* Fixe la position de l'élément pour qu'il reste en bas */
+    bottom: 0; /* Positionne l'élément tout en bas de la page */
+    left: 0; /* Aline l'élément à gauche de la page */
+    width: 100%; /* Fait en sorte que l'élément s'étende sur toute la largeur de la page */
+    height: 50px; /* Définit la hauteur de la zone rectangulaire */
+    background-color: red; /* Définit la couleur de fond en rouge */
+    color: white; /* Définit la couleur du texte en blanc pour le contraste */
+    text-align: center; /* Centre le texte dans la zone rectangulaire */
+    line-height: 50px; /* Centre verticalement le texte dans la zone */
+}
+
